@@ -1,6 +1,6 @@
 ## <center>MGMTMFE 431 - Quantitative Asset Management</center>
 
-## <center>Problem Set 1</center>
+### <center>Problem Set 1</center>
 
 In this project, we attempt to replicate the monthly market return time series available in Kenneth French website by constructing the value-weighted market return using CRSP data between July-1926 to December 2023.
 
