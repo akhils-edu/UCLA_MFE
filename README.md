@@ -1,6 +1,6 @@
-### <center>MGMTMFE 431 - Quantitative Asset Management</center>
+## <center>MGMTMFE 431 - Quantitative Asset Management</center>
 
-### <center>Problem Set 1</center>
+## <center>Problem Set 1</center>
 
 In this project, we attempt to replicate the monthly market return time series available in Kenneth French website by constructing the value-weighted market return using CRSP data between July-1926 to December 2023.
 
@@ -9,7 +9,7 @@ Link to CRPS data website at WRDS and Kenneth French website are given below:
 - https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/center-for-research-in-security-prices-crsp/
 - https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
 
-## Step 1 - Download and save raw CRSP data and Fama/French 3 Factor data
+### Step 1 - Download and save raw CRSP data and Fama/French 3 Factor data
 
 - Create a WRDS account to download CRSP data
 - Install wrds package in your python environment
@@ -39,7 +39,7 @@ Link to CRPS data website at WRDS and Kenneth French website are given below:
 - We need Date, Market_minus_Rf and Rf columns from this dataset
 - Store downloaded data in pickle format
 
-## Step 2 - Processes the saved CRSP raw returns and delisted returns data to create a merged dataframe
+### Step 2 - Processes the saved CRSP raw returns and delisted returns data to create a merged dataframe
 
 ### Process raw CRSP returns
    
@@ -60,7 +60,7 @@ Link to CRPS data website at WRDS and Kenneth French website are given below:
 - To keep all the values use outer join and join on date and permno
 - Store merged CRSP data in pickle format
 
-## Step 3 – Calculate value-weighted return, equal-weighted return and lagged total market cap using the merged data
+### Step 3 – Calculate value-weighted return, equal-weighted return and lagged total market cap using the merged data
 
 ### Filter unrequired data
 
@@ -123,7 +123,7 @@ A given 'permco' has multiple 'permno', so to find the correct market cap, we us
 - For a given month, we find lagged market cap-weighted returns to find  value-weighted return i.e 'Stock_Vw_Ret' series
 
 
-## Setp 4 - Comparing Estimated FF Market Excess Return with Actual FF Market Excess Return
+### Setp 4 - Comparing Estimated FF Market Excess Return with Actual FF Market Excess Return
     
 - Use 'Rf' series from Fama/French 3 Factor data and subtract it from 'Stock_Vw_Ret' series to find Estimated FF Market Excess Return
 - Use 'Market_minus_Rf' Fama/French 3 Factor data as Actual FF Market Excess Return
@@ -136,7 +136,7 @@ The results thus obtained are shown below:
 
 ![q2.jpg](attachment:q2.jpg)
 
-## Setp 5 - Compute Correlation and maximum absolute difference between the two time series
+### Setp 5 - Compute Correlation and maximum absolute difference between the two time series
 
 The results are shown below:
 
